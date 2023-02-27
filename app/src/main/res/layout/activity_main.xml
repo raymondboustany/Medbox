@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal"
+        android:text="Create an Account"
+        android:textColor="@color/teal_500"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="170dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_500"
+            android:fontFamily="@font/roboto"
+            android:text="I'm a Patient"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_400"
+            android:fontFamily="@font/roboto"
+            android:text="I'm a Caregiver"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal"
+            android:text="Continue as"
+            android:textColor="@color/teal_500"
+            android:textSize="12dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="140dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal"
+            android:text="guest"
+            android:textColor="@color/teal_500"
+            android:textSize="12dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
