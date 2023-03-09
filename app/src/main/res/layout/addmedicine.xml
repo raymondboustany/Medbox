@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/teal_400">
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="25dp"
+            android:text="Cancel"
+            android:textSize="18dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white"
+            android:layout_weight="1">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="25dp"
+            android:text="Add Medicine"
+            android:textSize="23dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:text="Done"
+            android:layout_weight="1"
+            android:textSize="18dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_med1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:hint="Medication Name"
+            android:inputType="text"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/spinner_label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:paddingTop="10dp"
+                android:paddingBottom="14dp"
+                android:text="Times a day"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:contentDescription=" "
+                android:labelFor="@id/spinner_label2"
+                android:paddingTop="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/spinner_label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="Frequency:"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="14dp"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingTop="50dp"
+                android:layout_weight="1"
+                android:contentDescription=" "
+
+
+                android:labelFor="@id/spinner_label1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/spinner_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:text="Number of pills"
+                android:textSize="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="14dp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:paddingTop="50dp"
+                android:contentDescription=" "
+                android:labelFor="@id/spinner_label" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="Set a alarm :"
+            android:textSize="20dp"
+            android:layout_gravity="left"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:timePickerMode="spinner" />
+
+        <EditText
+            android:id="@+id/input_med2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:hint="Enter number of pills in stock"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/button_med1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_400"
+            android:fontFamily="@font/roboto"
+            android:text="Start Date"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_med2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_400"
+            android:fontFamily="@font/roboto"
+            android:text="End Date"
+            android:textAllCaps="false"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

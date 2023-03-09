@@ -10,9 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/txt_sign1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="25dp"
+            android:paddingTop="23dp"
             android:paddingBottom="25dp"
             android:text="Sign up"
             android:textSize="25dp"
@@ -34,6 +35,7 @@
         android:layout_marginTop="80dp">
 
         <EditText
+            android:id="@+id/input_sign1"
             android:hint="username"
             android:inputType="numberDecimal"
             android:layout_marginStart="70dp"
@@ -41,8 +43,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/roboto"/>
+            android:fontFamily="@font/roboto"
+            android:textSize="23dp"/>
         <EditText
+            android:id="@+id/input_sign2"
             android:hint="email"
             android:inputType="numberDecimal"
             android:layout_marginStart="70dp"
@@ -51,8 +55,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginTop="30dp"
-            android:fontFamily="@font/roboto"/>
+            android:fontFamily="@font/roboto"
+            android:textSize="23dp"/>
         <EditText
+            android:id="@+id/input_sign3"
             android:hint="password"
             android:inputType="numberDecimal"
             android:layout_marginStart="70dp"
@@ -61,9 +67,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginTop="30dp"
-            android:fontFamily="@font/roboto"/>
+            android:fontFamily="@font/roboto"
+            android:textSize="23dp"/>
         <EditText
-            android:id="@+id/edt1"
+            android:id="@+id/input_sign4"
             android:hint="re-enter password"
             android:inputType="numberDecimal"
             android:layout_marginStart="70dp"
@@ -72,11 +79,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
-            android:fontFamily="@font/roboto"/>
+            android:fontFamily="@font/roboto"
+            android:textSize="23dp"/>
 
 
     </LinearLayout>
     <Button
+        android:id="@+id/button_sign1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign up"
