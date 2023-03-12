@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MedBox</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="schedule_notification">schedule_notification</string>
+    <string name="humidity_temperature">Humidity + Temperature:</string>
+    <string name="linked_bluetooth_devices">Linked Bluetooth devices:</string>
+    <string name="search_linked_bt_devices">Search linked BT devices</string>
+    <string name="connect_to_hc_05">Connect to HC-05</string>
+    <string name="clear">Clear</string>
 </resources>
