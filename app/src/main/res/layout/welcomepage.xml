@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/teal_400">
+
+<TextView
+    android:id="@+id/logo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Logo"
+    android:textColor="@color/white"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="100dp"
+    android:textSize="30dp"
+    android:textStyle="bold"
+/>
+
+    <TextView
+        android:id="@+id/txtw1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome!\nLet's get started"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_below="@+id/logo"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+
+        />
+    <Button
+        android:id="@+id/btnw1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtw1"
+        android:layout_marginTop="150dp"
+        android:text="Get started"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"/>
+
+    <TextView
+        android:id="@+id/txtw2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_below="@+id/btnw1"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/txtw3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_below="@id/txtw2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

@@ -39,7 +39,11 @@ import java.text.SimpleDateFormat
 
 class MainActivity : AppCompatActivity() {
 
-    companion object {
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.welcomepage)
+        }
+/*    companion object {
         private val mUUID: UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB")
 
     }
@@ -555,6 +559,6 @@ class MainActivity : AppCompatActivity() {
         }
     }*/
 
-
-
+*/
+}
 
