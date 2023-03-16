@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
-
-
     <LinearLayout
+        android:id="@+id/topPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -18,12 +18,11 @@
             android:paddingTop="5dp"
             android:paddingBottom="25dp"
             android:text="Cancel"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:gravity="center_horizontal"
             android:fontFamily="@font/roboto"
             android:textColor="@color/white"
             android:layout_weight="1">
-
         </TextView>
 
         <TextView
@@ -32,12 +31,11 @@
             android:layout_height="wrap_content"
             android:paddingBottom="25dp"
             android:text="Add Medicine"
-            android:textSize="23dp"
+            android:textSize="23sp"
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:fontFamily="@font/roboto"
             android:textColor="@color/white">
-
         </TextView>
 
         <TextView
@@ -47,22 +45,20 @@
             android:paddingBottom="25dp"
             android:text="Done"
             android:layout_weight="1"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:gravity="center_horizontal"
             android:fontFamily="@font/roboto"
             android:textColor="@color/white">
-
         </TextView>
-
-
     </LinearLayout>
 
     <LinearLayout
-
+        android:id="@+id/midPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_below="@id/topPanel">
 
         <EditText
             android:id="@+id/input_med1"
@@ -91,8 +87,8 @@
                 android:fontFamily="@font/roboto"
                 android:paddingTop="10dp"
                 android:paddingBottom="14dp"
-                android:text="Times a day"
-                android:textSize="20dp" />
+                android:text="@string/times_a_day"
+                android:textSize="20sp" />
 
             <Spinner
                 android:id="@+id/spinner2"
@@ -101,7 +97,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
-                android:contentDescription=" "
+                android:contentDescription="@string/times_a_day"
                 android:labelFor="@id/spinner_label2"
                 android:paddingTop="50dp" />
         </LinearLayout>
@@ -120,8 +116,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/roboto"
-                android:text="Frequency:"
-                android:textSize="20dp"
+                android:text="@string/frequency"
+                android:textSize="20sp"
                 android:paddingTop="10dp"
                 android:paddingBottom="14dp"/>
 
@@ -133,9 +129,7 @@
                 android:layout_marginEnd="10dp"
                 android:paddingTop="50dp"
                 android:layout_weight="1"
-                android:contentDescription=" "
-
-
+                android:contentDescription="@string/frequency"
                 android:labelFor="@id/spinner_label1" />
         </LinearLayout>
 
@@ -153,8 +147,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/roboto"
-                android:text="Number of pills"
-                android:textSize="20dp"
+                android:text="@string/number_of_pills"
+                android:textSize="20sp"
                 android:paddingTop="10dp"
                 android:paddingBottom="14dp"/>
 
@@ -166,7 +160,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:paddingTop="50dp"
-                android:contentDescription=" "
+                android:contentDescription="@string/number_of_pills"
                 android:labelFor="@id/spinner_label" />
         </LinearLayout>
 
@@ -179,9 +173,10 @@
             android:layout_weight="1"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/roboto"
-            android:text="Set a alarm :"
-            android:textSize="20dp"
-            android:layout_gravity="left"/>
+            android:text="@string/set_an_alarm"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            tools:ignore="RtlHardcoded" />
 
         <TimePicker
             android:id="@+id/timePicker"
@@ -202,10 +197,9 @@
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:fontFamily="@font/roboto"
-            android:hint="Enter number of pills in stock"
+            android:hint="@string/enter_number_of_pills_in_stock"
             android:inputType="numberDecimal"
-            android:textSize="20dp" />
-
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -213,7 +207,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/midPanel"
+        >
 
         <Button
             android:id="@+id/button_med1"
@@ -227,7 +223,7 @@
             android:text="Start Date"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="19dp"
+            android:textSize="19sp"
             android:textStyle="bold" />
 
         <Button
@@ -241,14 +237,7 @@
             android:fontFamily="@font/roboto"
             android:text="End Date"
             android:textAllCaps="false"
-            android:textSize="19dp"
+            android:textSize="19sp"
             android:textStyle="bold" />
-
     </LinearLayout>
-
-
-
-
-
-
-</LinearLayout>
+</RelativeLayout>
