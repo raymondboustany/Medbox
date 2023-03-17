@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+
 import androidx.navigation.fragment.findNavController
 import com.example.medbox.databinding.FragmentSecondBinding
 
@@ -36,6 +38,11 @@ class SecondFragment : Fragment() {
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment) // actions defined in nav_graph.xml
         }
+
+        val spinner2 = binding.timesadaySpinner
+        val numbers2 = arrayOf("1", "2", "3", "4")
+        val adapter2 = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, numbers2)
+        spinner2.adapter = adapter2
     }
 
     override fun onDestroyView() {

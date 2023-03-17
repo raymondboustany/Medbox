@@ -22,14 +22,17 @@ class Homepage : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        val navController = findNavController(R.id.nav_host_fragment_content_homepage)
+        val navController = findNavController(R.id.nav_host_fragment_content_homepage) //content_homepage.xml
         appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        setupActionBarWithNavController(navController, appBarConfiguration) //change navbar content
 
         //plus button bottom right corner
-        binding.fab.setOnClickListener { view ->
+        /*binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+        }*/
+        binding.fab.setOnClickListener {
+            findNavController(R.id.nav_host_fragment_content_homepage).navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
     }
 

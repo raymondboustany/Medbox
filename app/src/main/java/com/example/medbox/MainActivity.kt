@@ -382,9 +382,6 @@ class MainActivity : AppCompatActivity() {
             enableCheckButtons()
         }
 
-
-
-
         /*// Find the spinner view in your layout file
         val spinner = findViewById<Spinner>(R.id.spinner)
         val spinner1 = findViewById<Spinner>(R.id.spinner1)
