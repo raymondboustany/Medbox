@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+
+    <TextView
+        android:id="@+id/txt_sign1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="23dp"
+        android:paddingBottom="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textSize="25dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/teal_400">
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Email"
+        android:layout_below="@id/txt_sign1"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="20dp"
+        android:text="Password:"
+        android:textSize="20dp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginLeft="100dp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="20dp"
+        android:text="Forgot Password ?"
+        android:textColor="@color/teal_400"
+        android:textSize="15dp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginLeft="50dp"/>
+
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto"
+        android:backgroundTint="@color/teal_400"
+        android:layout_marginLeft="140dp"
+        android:layout_marginRight="140dp"/>
+
+</RelativeLayout>
