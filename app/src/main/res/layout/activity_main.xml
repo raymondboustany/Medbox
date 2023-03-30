@@ -54,44 +54,6 @@
             android:textAllCaps="false"
             android:textSize="20dp"
             android:textStyle="bold" />
-
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/txt_ac2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="110dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/roboto"
-            android:gravity="center_horizontal"
-            android:text="Continue as"
-            android:textColor="@color/teal_500"
-            android:textSize="20dp">
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/txt_ac3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="140dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/roboto"
-            android:gravity="center_horizontal"
-            android:text="guest"
-            android:textColor="@color/teal_500"
-            android:textSize="20dp">
-
-        </TextView>
-
-    </LinearLayout>
-
 
 </LinearLayout>

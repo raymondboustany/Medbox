@@ -6,43 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".SecondFragment">
 
-    <LinearLayout
-        android:id="@+id/addmedlayout"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8sp"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.cardview.widget.CardView
+        <LinearLayout
+            android:id="@+id/addmedlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="4dp"
-            app:cardElevation="2sp"
-            app:cardUseCompatPadding="true"
-            app:contentPadding="16sp">
+            android:layout_margin="8sp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2sp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16sp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/title_medicine_name"
-                    android:textColor="@color/colorPrimary"
-                    android:fontFamily="@font/roboto"
-                    android:textSize="14sp" />
+                    android:orientation="vertical">
 
-                <EditText
-                    android:id="@+id/edit_med_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/hint_enter_med_name" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/title_medicine_name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    <EditText
+                        android:id="@+id/edit_med_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="@string/hint_enter_med_name"
+                        android:inputType="text" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
             <androidx.cardview.widget.CardView
@@ -52,12 +60,13 @@
                 app:cardCornerRadius="4dp"
                 app:cardElevation="2sp"
                 app:cardUseCompatPadding="true"
-                app:contentPadding="16sp"
-                >
+                app:contentPadding="16sp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -71,7 +80,6 @@
                             android:layout_marginEnd="10sp"
                             android:layout_weight="1"
                             android:fontFamily="@font/roboto"
-
                             android:paddingBottom="14sp"
                             android:text="@string/times_a_day"
                             android:textSize="20sp" />
@@ -79,14 +87,14 @@
                         <androidx.appcompat.widget.AppCompatSpinner
                             android:id="@+id/timesaday_spinner"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="48dp"
                             android:layout_marginStart="10sp"
                             android:layout_marginEnd="10sp"
                             android:layout_weight="1"
                             android:contentDescription="@string/times_a_day"
                             android:labelFor="@id/timesaday_spinner"
 
-                             />
+                            />
                     </LinearLayout>
 
                     <LinearLayout
@@ -110,23 +118,25 @@
                         <EditText
                             android:id="@+id/tv_dose_quantity"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="48dp"
                             android:layout_marginStart="8sp"
+                            android:layout_marginEnd="10sp"
                             android:layout_weight="1"
                             android:background="@drawable/drawable_underline"
                             android:gravity="end"
-                            android:layout_marginEnd="10sp"
+                            android:inputType="number"
                             android:padding="4sp"
-                            android:text="1.0"
-                            android:inputType="numberDecimal"/>
+                            android:text="1" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp">
 
                         <TextView
                             android:id="@+id/typeofmeds"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20sp"
                             android:layout_marginEnd="10sp"
@@ -140,11 +150,8 @@
                             android:id="@+id/spinner_dose_units"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginStart="8dp"
-
+                            android:layout_marginStart="8sp"
                             android:entries="@array/medications_shape_array" />
-
 
                     </LinearLayout>
                 </LinearLayout>
@@ -152,50 +159,106 @@
             </androidx.cardview.widget.CardView>
 
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="4dp"
-            app:cardElevation="2dp"
-            app:cardUseCompatPadding="true"
-            app:contentPadding="16dp">
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2sp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16sp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/title_reminder"
-                    android:textColor="@color/colorPrimary"
-                    android:fontFamily="@font/roboto"
-                    android:textSize="14sp" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20sp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/title_reminder"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ScrollView
+                            android:id="@+id/time_picker_scroll_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/time_picker_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" />
+
+                        </ScrollView>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="8sp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2sp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="16sp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-                    <TimePicker
-                        android:id="@+id/timePicker"
-                        android:layout_width="0dp"
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="start"
-                        android:layout_marginLeft="-30dp"
-                        android:layout_marginRight="-30dp"
+                        android:layout_gravity="end"
+                        android:text="Refill Reminder  " />
+
+                    <EditText
+                        android:id="@+id/input_med2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="30sp"
+                        android:layout_marginEnd="30sp"
                         android:layout_weight="1"
-                        android:scaleX="0.7"
-                        android:scaleY="0.7"
-                        android:timePickerMode="spinner" />
+                        android:fontFamily="@font/roboto"
+                        android:hint="@string/enter_number_of_pills_in_stock"
+                        android:inputType="number"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
 
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="#0000FF"
+                android:background="@null"
+                android:textStyle="bold"
+                android:onClick="saveEventAction"
+                android:layout_gravity="center"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <!--
     <Button
         android:id="@+id/button_second"
         android:layout_width="wrap_content"
@@ -205,4 +268,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/addmedlayout" />
+        -->
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
